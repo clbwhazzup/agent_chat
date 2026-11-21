@@ -107,6 +107,7 @@ The Pebble emulator has no plugin host, so on an emulator the app shows "Agent p
 
 - `screenshots/`: five screenshots per platform at each watch's exact screen size, named `<platform>_<n>_<name>.png` as `pebble publish` expects. Pebble 2 (diorite) reuses the Pebble 2 Duo (flint) images, since both have the same black-and-white screen.
 - `store/banner.png`: the 720×320 listing banner.
+- `store/icon_large.png` and `store/icon_small.png`: the 144×144 and 48×48 app icons for the Rebble appstore.
 - `docs/`: composite images used by this README.
 
 ## How it works
