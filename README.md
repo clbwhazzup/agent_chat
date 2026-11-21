@@ -2,7 +2,7 @@
 
 Talk to your AI agents from your Pebble. Press a button, speak, and your words go to Claude, ChatGPT, Grok Bot, Muse, or any other agent plugin installed in the Pebble app. When the agent can answer back, the reply shows up on your wrist.
 
-![Agent Chat on Pebble Time, Time Round, Pebble 2 Duo, Pebble Time 2 and Pebble Round 2](screenshots/banner.png)
+![Agent Chat on Pebble Time, Time Round, Pebble 2 Duo, Pebble Time 2 and Pebble Round 2](docs/overview.png)
 
 Agent Chat is a watchapp built on the [Pebble plugins](https://developer.repebble.com/guides/plugins/) agent contract (`send_to_agent`, `agent/chats`, `agent/configured`). It finds every agent plugin you have installed. Switching between them, and between their recent chats, works the same for all of them, and each plugin only gets the features it supports.
 
@@ -18,7 +18,7 @@ Agent Chat is a watchapp built on the [Pebble plugins](https://developer.repebbl
 - **Never sends twice.** A send that may or may not have arrived is reported as such and never retried automatically.
 - **Runs on every Pebble with a microphone**, color or black-and-white, rectangular or round.
 
-![Sending, settings, agent picker and a reply on Pebble Time 2](screenshots/emery-flow.png)
+![Sending, the agent picker, settings and a reply on Pebble Time 2](docs/emery-flow.png)
 
 ## Supported agents
 
@@ -101,7 +101,13 @@ npm test
 - Universal AI's inline answers
 - following a newly created chat
 
-The Pebble emulator has no plugin host, so on an emulator the app shows "Agent plugins need the latest Pebble app". The screenshots in this README were taken on the emulators with fake plugins standing in.
+The Pebble emulator has no plugin host, so on an emulator the app shows "Agent plugins need the latest Pebble app". The screenshots were taken on the emulators with fake plugins standing in.
+
+### Appstore assets
+
+- `screenshots/`: five screenshots per platform at each watch's exact screen size, named `<platform>_<n>_<name>.png` as `pebble publish` expects. Pebble 2 (diorite) reuses the Pebble 2 Duo (flint) images, since both have the same black-and-white screen.
+- `store/banner.png`: the 720×320 listing banner.
+- `docs/`: composite images used by this README.
 
 ## How it works
 
