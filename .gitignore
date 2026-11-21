@@ -1,0 +1,22 @@
+# Pebble build output
+build/
+*.pbw
+.lock-waf*
+.waf-*
+.waf3-*
+
+# npm
+node_modules/
+npm-debug.log*
+
+# Signing keys and credentials
+*.pem
+*.pbl
+.env
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.swp

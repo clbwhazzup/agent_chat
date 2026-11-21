@@ -1,0 +1,88 @@
+{
+  "name": "agent_chat",
+  "author": "clbwhazzup",
+  "version": "1.0",
+  "description": "Talk to Claude, ChatGPT and other AI agent plugins from your Pebble.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/clbwhazzup/agent_chat.git"
+  },
+  "homepage": "https://github.com/clbwhazzup/agent_chat#readme",
+  "bugs": {
+    "url": "https://github.com/clbwhazzup/agent_chat/issues"
+  },
+  "keywords": ["pebble-app"],
+  "private": true,
+  "dependencies": {},
+  "scripts": {
+    "test": "node --test test/*.test.js"
+  },
+  "pebble": {
+    "displayName": "Agent Chat",
+    "uuid": "72e92908-4571-4096-9527-bace0ae4993a",
+    "sdkVersion": "3",
+    "enableMultiJS": true,
+    "targetPlatforms": [
+      "basalt",
+      "chalk",
+      "diorite",
+      "emery",
+      "flint",
+      "gabbro"
+    ],
+    "watchapp": {
+      "watchface": false
+    },
+    "usesPermissions": [
+      {
+        "name": "InvokeAction",
+        "plugin": "0d33014e-5d56-42ea-9665-3ebf182b4cfb",
+        "reason": "To send what you say to your Claude chats",
+        "required": false
+      },
+      {
+        "name": "InvokeAction",
+        "plugin": "3f97d5c5-bc28-48ba-b4af-e7ad7f6000f0",
+        "reason": "To send what you say to your ChatGPT chats",
+        "required": false
+      },
+      {
+        "name": "InvokeAction",
+        "plugin": "80ee6780-856f-411f-954b-4553ba7f2af8",
+        "reason": "To send what you say to Grok Bot and read its replies",
+        "required": false
+      },
+      {
+        "name": "InvokeAction",
+        "plugin": "b8346592-cd59-4b83-9185-87d94e0734b0",
+        "reason": "To send what you say to your Muse chats",
+        "required": false
+      },
+      {
+        "name": "InvokeAction",
+        "plugin": "2c5edc42-b096-4f76-b284-1f27907e6501",
+        "reason": "To send what you say to Universal AI and show its answers",
+        "required": false
+      }
+    ],
+    "messageKeys": [
+      "CMD",
+      "ARG",
+      "TEXT",
+      "AGENTS",
+      "AGENT_ACTIVE",
+      "CAPS",
+      "ACCENT",
+      "SESSIONS",
+      "SESSION_ACTIVE",
+      "CONFIGURED",
+      "STATUS",
+      "DELIVERY",
+      "DELIVERY_TEXT",
+      "REPLY"
+    ],
+    "resources": {
+      "media": []
+    }
+  }
+}
